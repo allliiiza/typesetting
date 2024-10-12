@@ -1,0 +1,129 @@
+/* General setup; do not change the given CSS code. Add your own CSS code at the bottom! */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* Header and Footer */
+
+header, footer {
+  border-top: 5px solid rgb(56, 2, 57);
+  border-bottom: 5px solid rgb(56, 2, 57);
+}
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lora&display=swap');
+
+/* Apply Fonts */
+body {
+  font-family: 'Lora', serif;
+  font-size: 14px; /* ~0.625rem */
+  line-height: 1.6; /* Improves readability */
+  letter-spacing: 0.5px; /* Slight space between letters */
+  word-spacing: 1px; /* More readable word spacing */
+}
+
+h1, h2 {
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 1px; /* Give some breathing room to letters */
+  text-align: center; /* Center the top heading */
+}
+
+/* Text Indentation */
+section p:first-of-type {
+  text-indent: 1.25rem;
+}
+
+/* Styling Links */
+a {
+  text-decoration: underline;
+  color: rgb(186, 62, 248);
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: rgb(60, 7, 96); /* Slightly darker shade */
+}
+
+a:active {
+  color: rgb(67, 7, 87); /* Different style for active links */
+}
+
+/* Remove focus outline for links */
+a:focus {
+  outline: none;
+}
+
+/* Add external link icons */
+a[href^="https://"]:after {
+  content: ' 🔗'; /* Unicode for link icon */
+  font-size: 0.75rem;
+}
+
+/* List Styling */
+ul, ol {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  line-height: 1.6; /* Match paragraph line-height */
+  list-style-type: square; /* Custom bullet style */
+}
+
+/* Navigation Menu Styling */
+nav ul {
+  list-style-type: none; /* Remove bullets from nav */
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px; /* Space between items */
+}
+
+nav a {
+  display: block;
+  padding: 10px 15px;
+  border: 1px solid #a66;
+  text-align: center;
+  background-color: #f9e0ff;
+  color: rgb(34, 9, 9);
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav a:hover {
+  background-color: rgb(71, 35, 100);
+  color: white;
+}
